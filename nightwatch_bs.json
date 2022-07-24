@@ -1,0 +1,81 @@
+{
+    "src_folders": [
+        "tests"
+    ],
+    "output_folder": "",
+    "custom_commands_path": "commands",
+    "custom_assertions_path": "",
+    "page_objects_path": "pages",
+    "globals_path": "",
+    "test_workers": {
+        "enabled": true,
+        "workers": "auto"
+    },
+    "selenium": {
+        "start_process": true,
+        "server_path": "lib/selenium-server-standalone-3.141.59.jar",
+        "start_session": true,
+        "log_path": "log/",
+        "host": "hub-cloud.browserstack.com",
+        "port": 80,
+        "username": "maheshshirsath1",
+        "access_key":"SU9y6NeCnqjcHEC8Ryah",
+        "cli_args": {
+            "webdriver.chrome.driver": "lib/chromedriver",
+            "webdriver.gecko.driver" : "lib/geckodriver",
+            "webdriver.edge.driver": ""
+        }
+    },
+    "test_settings": {
+        "default": {
+            "launch_url": "https://www.stage2.royalcaribbean.com/account/signin",
+            "silent": true,
+            "skip_testcases_on_fail": false,
+            "screenshots": {
+                "enabled": false,
+                "path": ""
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "browserstack.debug": true,
+                "javascriptEnabled": true,
+                "acceptSslCerts": true,
+                "chromeOptions": {
+                    "args": ["start-maximized"]
+                }
+            }
+        },
+        "chrome": {
+            "silent": true,
+            "skip_testcases_on_fail": false,
+            "screenshots": {
+                "enabled": false,
+                "path": ""
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true,
+                "chromeOptions": {
+                    "args": ["start-maximized"]
+                }
+            }
+        },
+        "firefox": {
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "marionette": true
+            }
+        },
+        "safari": {
+            "desiredCapabilities": {
+                "browserName": "safari"
+            }
+        },
+        "edge": {
+            "desiredCapabilities": {
+                "browserName": "MicrosoftEdge"
+            }
+        }
+    }
+}

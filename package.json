@@ -1,0 +1,22 @@
+{
+  "name": "nightwatchconfdemo",
+  "version": "1.0.0",
+  "description": "nightwatch config demo",
+  "main": "nightwatch.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "author": "Atul Parihar",
+  "license": "ISC", 
+  "devDependencies": {
+    "chromedriver": "^76.0.1",
+    "geckodriver": "^1.16.2",
+    "selenium-server": "^3.141.59"
+  },
+  "engines": {
+    "node": "4.4.6"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}

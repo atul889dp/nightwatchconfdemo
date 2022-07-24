@@ -1,0 +1,69 @@
+{
+    "src_folders": ["tests"],
+    "output_folder": "",
+    "custom_commands_path": "commands",
+    "custom_assertions_path": "",
+    "page_objects_path": "pages",
+    "globals_path": "globals",
+    "test_runner":"",
+    "selenium": {
+        "start_process": true,
+        "server_path": "lib/selenium-server-standalone-3.141.59.jar",
+        "start_session": true,
+        "log_path": "log/",
+        "host": "127.0.0.1",
+        "port": 4444,
+        "cli_args": {
+            "webdriver.chrome.driver": "./node_modules⁩/chromedriver⁩/lib⁩/chromedriver⁩/chromedriver",
+            "webdriver.gecko.driver" : "./node_modules⁩/geckodriver⁩/⁨bin⁩/geckodriver",
+            "webdriver.edge.driver": ""
+        }
+    },
+    "test_settings": {
+        "default": {
+            "launch_url": "https://www.stage2.royalcaribbean.com/account/signin",
+            "selenium_port": 4444,
+            "selenium_host": "127.0.0.1",
+            "silent": true,
+            "skip_testcases_on_fail": false,
+            "screenshots": {
+                "enabled": false,
+                "path": "screenshots"
+            },
+            "desiredCapabilities": {
+                "browserName": "safari",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+        "chrome": {
+            "launch_url": "https://www.stage2.royalcaribbean.com/account/signin",
+            "selenium_port": 4444,
+            "selenium_host": "localhost",
+            "silent": true,
+            "skip_testcases_on_fail": false,
+            "screenshots": {
+                "enabled": false,
+                "path": "screenshots"
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+      "safari": {
+            "desiredCapabilities" : {
+                "browserName" : "safari",
+                "javascriptEnabled" : true,
+                "acceptSslCerts" : true
+              }
+        },
+        "firefox": {
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "marionette": true
+            }
+        }
+    }
+}
